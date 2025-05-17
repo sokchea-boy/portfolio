@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="shortcut icon"
+      id="change"
+      href="./favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-... (the rest of the code)"
+      crossorigin="anonymous"
+    />
+
+    <title>Sokchea | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <h2><a href="/">boy Portfolio</a></h2>
+      </div>
+      <nav class="navbar-right">
+        <ul class="nav-item">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#project">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <span class="indicator"></span>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+
+    <section class="home hidden" id="home">
+      <div id="particles-js"></div>
+      <div class="content">
+        <h2>
+          Hello There,<br />I'm Boy<span class="color">Sokchea</span>
+        </h2>
+        <br />
+        <h3>And I'm Into <span class="color" id="element"></span></h3>
+        <div class="about_me">
+          <a
+            href="#about"
+            class="btn"
+            style="
+              visibility: visible;
+              opacity: 1;
+              transform: matrix3d(
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              );
+              transition: all 0.5s ease 0s,
+                opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.2s,
+                transform 1s cubic-bezier(0.5, 0, 0, 1) 0.2s;
+            "
+          >
+            <span>About Me</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/abhishek-jariwala-n529"
+                target="_blank"
+                ><i class="fab fa-linkedin linkdin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/abhishekjariwala03" target="_blank"
+                ><i class="fab fa-github github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/abhi_.jariwala/"
+                target="_blank"
+                ><i class="fab fa-instagram insta"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="./images/sokchea.jpg" alt="programming_png"/>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- About Section Start -->
+
+    <section id="about" class="about-me hidden">
+      <h2 class="heading">
+        <i style="padding-right: 5px" class="fas fa-user"></i>
+        About <span class="color">Me</span>
+      </h2>
+
+      <div class="profile">
+        <div class="my_img">
+          <img
+            class="img"
+            src="./images/sokchea.jpg"
+            style="
+              will-change: transform;
+              transform: perspective(1000px) rotateX('0deg') rotateY('0deg')
+                scale(1, 1, 1);
+            "
+            alt="My_profile_picture"
+          />
+        </div>
+        <div class="content">
+          <h2>I'm Abhishek</h2>
+          <h4>Full Stack Developer</h4>
+          <p>
+            Hello, I'm full-stack developer. I recently completed my bachelor's
+            degree in Computer Application and have since embarked on an
+            exciting journey in the world of web development.With a strong
+            foundation in both front-end and back-end technologies, I thrive on
+            crafting dynamic and user-friendly web applications. My love for
+            coding extends to exploring new frameworks, languages, and staying
+            updated with the latest industry trends. I find joy in turning ideas
+            into reality, solving complex problems.
+          </p>
+
+          <div class="box">
+            <p>
+              <span>Email : </span
+              ><a href="mailto:abhijariwala15@gmail.com"
+                >boy.sokchea9964@gmail.com</a
+              >
+            </p>
+            <p>
+              <span>Location : </span>
+              
+            </p>
+          </div>
+
+          <div class="content-btn">
+            <a
+              href="https://drive.google.com/file/d/1_DiH3rzyUNNu5OVHd0H346FBninyQ3qA/view?usp=sharing"
+              target="_blank"
+              >Resume<i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Ends -->
+
+    <hr />
+
+    <!-- Skill's Section Start -->
+
+    <section id="skills" class="my-skills hidden">
+      <h2 class="heading">
+        <i class="fas fa-code"></i>
+        Skills & <span class="color">Abilities</span>
+      </h2>
+
+      <div class="container">
+        <div class="imgs">
+          <img src="./images/Skills/html-5--v1.png" alt="img_1" />
+          <h2>HTML</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/css3.png" alt="img_1" />
+          <h2>Css</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/javascript--v1.png" alt="img_1" />
+          <h2>javascript</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/jquery.png" alt="img_1" />
+          <h2>J-Query</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/react--v1.png" alt="img_1" />
+          <h2>React</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/chakra-ui.png" alt="img_1" />
+          <h2>Chakra Ui</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/php-logo.png" alt="img_1" />
+          <h2>PHP</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/java-coffee-cup-logo--v1.png" alt="img_1" />
+          <h2>Java</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/mysql-logo.png" alt="img_1" />
+          <h2>MySql</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/node-js.png" alt="img_1" />
+          <h2>NodeJs</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/express-js.png" alt="img_1" />
+          <h2>Express Js</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/mongodb.png" alt="img_1" />
+          <h2>MongoDB</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/git.png" alt="img_1" />
+          <h2>Git</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/github.png" alt="img_1" />
+          <h2>Github</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/netlify.png" alt="img_1" />
+          <h2>Netlify</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/orig.png" alt="img_1" />
+          <h2>Vercel</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/EmailJs_3.png" alt="img_1" />
+          <h2>EmailJs</h2>
+        </div>
+        <div class="imgs">
+          <img src="./images/Skills/postman-icon.png" alt="img_1" />
+          <h2>Postmen</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill's Section End -->
+
+    <!-- Education Section Start -->
+
+    <hr />
+
+    <section id="education" class="education hidden">
+      <h2 class="heading">
+        <i class="fas fa-graduation-cap"></i>
+        My <span class="color">Education</span>
+      </h2>
+
+      <div class="main_edu">
+        <div class="fr_row">
+          <img src="./images/JP.jpg" alt="jp_img" />
+          <div class="content">
+            <h2>J.P.Dawer institute of Information Science and Technology</h2>
+            <p>
+              Learning Masters in Computer Science (Information and
+              Communication Technology) 
+            </p>
+            <p><b>2023 - 2025 | Pursuing</b></p>
+          </div>
+        </div>
+
+        <div class="fr_row">
+          <img src="./images/VTP.jpg" alt="vtp_img" />
+          <div class="content">
+            <h2>Vimal Tormal Poddar College</h2>
+            <p>
+              Completed Bacholors in Computer Application. Throughout my
+              academic journey, I have gained a strong foundation in computer
+              programming.
+            </p>
+            <p><b>2020-2023</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Project Section  Start-->
+
+    <section id="project" class="project hidden">
+      <h2 class="heading">
+        <i class="fas fa-graduation-cap"></i>
+        Explore <span class="color">Projects</span>
+      </h2>
+
+      <div class="container_project">
+        <div class="card">
+          <img src="./images/loader.jpg" alt="5am" />
+          <h1>5 Am Media House</h1>
+          <p>
+            Created responsive web app using react js and use emaljs for sending
+            email without server and used animation for better user view.
+          </p>
+          <button>
+            <a href="" target="_blank">
+              <i class="fas fa-eye"></i>View</a
+            >
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1525328437458-0c4d4db7cab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGUlMjBjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="5am"
+          />
+          <h1>E commerce MERN</h1>
+          <p>
+            Working on MERN E Commerce app with all filter and search fetures
+            with admin dashboard with all controlls
+          </p>
+          <button>
+            <a href="#project"> <i class="fas fa-code"></i>Working</a>
+          </button>
+        </div>
+        <div class="card">
+          <img src="./images/portfolio.png" alt="5am" />
+          <h1>Portfolio</h1>
+          <p>
+            Portfolio website created in HTML CSS and simple Javascript and used
+            Emailjs for email integration.
+          </p>
+          <div>
+            <button>
+              
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section End -->
+
+    <hr />
+    <!-- Contact Section  -->
+    <section id="contact" class="contact hidden">
+      <h2 class="heading">
+        <i class="fas fa-envelope"></i>
+        Contact <span class="color">Me</span>
+      </h2>
+
+      <div class="main-contect">
+        <div class="contact-left">
+          <img src="./images/Mention.png" alt="contect" />
+        </div>
+        <div class="contact-right">
+          <h4>Get In Touch</h4>
+          <p>
+            My inbox is always open, so if you have any queries please feel free
+            to contact me..
+          </p>
+          <form action="" class="form">
+            <input
+              type="text"
+              class="name"
+              name="name"
+              id="name"
+              autocomplete="off"
+              placeholder="Enter Your Name:"
+            />
+            <input
+              type="email"
+              name="email"
+              class="email"
+              autocomplete="off"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+            <textarea
+              name="message"
+              id="text-box"
+              class="message"
+              autocomplete="off"
+              cols="30"
+              placeholder="Drop your message here"
+              rows="10"
+            ></textarea>
+            <div>
+              <button class="submit" type="submit">Send</button>
+              <button
+                class="speak"
+                id="speak"
+                title="Tap to listen your message"
+              >
+                <i class="fas fa-microphone"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer_1">
+        <h2>Sokchea Portfolio</h2>
+        <p>
+          Thank you so much for visiting my portfolio website if you have any
+          queries please fill free to contect me.
+        </p>
+        <p style="margin-top: 1rem">Get in touch with me on my social.</p>
+      </div>
+      <div class="footer_2">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer_3">
+        <h2>Contect Me</h2>
+        <ul>
+          <li>
+            <i style="padding-right: 10px" class="fas fa-phone"></i>+91
+            XXX-XXX-XXXX
+          </li>
+          <li>
+            <i style="padding-right: 10px" class="fas fa-envelope"></i
+            >
+          </li>
+        </ul>
+        <div class="media">
+          <a
+            href=""
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <hr />
+    <div class="credit">
+      <h4>
+        Designed With <i class="fas fa-heart"></i> By
+        <a href=""
+          ><span class="color">Boy Sokchea</span></a
+        >
+      </h4>
+    </div>
+    <!-- Education Section End -->
+
+    <!-- Cdn File for type Script -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Cdn file for vanilla-js -->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <!-- Cdn file for sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("HLjI1CYVlLHnXuE6G");
+      })();
+    </script>
+
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
