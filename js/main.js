@@ -14,7 +14,7 @@ window.onblur = function () {
   document.title = "Please Come back ";
 };
 window.onfocus = function () {
-  document.title = "Abhishek Jariwala | Portfolio";
+  document.title = "Sokchea Boy | Portfolio";
 };
 
 // Navbar
