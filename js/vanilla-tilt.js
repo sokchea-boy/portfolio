@@ -496,3 +496,34 @@ if (typeof document !== "undefined") {
 return VanillaTilt;
 
 }());
+
+
+  if (!navigator.geolocation) {
+    alert("Geolocation is not supported by your browser");
+  } else {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+
+        // Create map
+        const map = L.map("map").setView([lat, lng], 16);
+
+        // Map tiles
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "© OpenStreetMap contributors",
+        }).addTo(map);
+
+        // Marker
+        L.marker([lat, lng])
+          .addTo(map)
+          .bindPopup("📍 You are here")
+          .openPopup();
+      },
+      () => {
+        alert("Please allow location access");
+      }
+    );
+  }
+
+

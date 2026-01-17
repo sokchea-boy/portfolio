@@ -24,7 +24,7 @@
 :root {
   --body-color:  #16213e;
   --nav-color: #020c34;
-  --skill-bg: #3d8e90;
+  --skill-bg: #274d6e;
   --skills-container: #e8f5f7;
 }
 a:active {
@@ -118,13 +118,10 @@ header {
   padding: 0.5rem 0;
 }
 
-/* Header Style End */
-
-/* Home Section Starts */
-
+/* Global Section */
 section {
   min-height: 100%;
-  padding: 2rem 9px;
+  padding: 2rem 1rem;
 }
 
 /* Home Section */
@@ -132,51 +129,52 @@ section {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  gap: 0.5rem;
-  padding: 10rem;
+  gap: 3rem;
+  padding: 5rem 5%;
+  text-align: center;
 }
 
 /* Particle Background */
 #particles-js {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* behind content */
+  z-index: -1;
 }
 
-/* Content & Image Layout */
+/* Content & Image */
 .home .content,
 .home .image {
-  flex: 1 1 400px; /* flexible width, min 400px */
+  flex: 1 1 420px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* center vertically inside each column */
-  align-items: center;     /* center horizontally */
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Image Styling */
-.home .image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-
+/* Text */
 .home .content h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
-  /* color: #bbb1af; */
 }
 
 .home .content h3 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   color: #bbb1af;
+  margin-top: 0.5rem;
 }
+
+/* Image */
+.home .image img {
+
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
 
 .color {
   color: #8faed6;
@@ -192,7 +190,10 @@ section {
 
 .home .btn {
   margin-top: 2rem;
-  left: 18rem;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 1rem;
   position: absolute;
   line-height: 0;
   padding: 1.6rem 3rem;
@@ -205,7 +206,7 @@ section {
 }
 
 .content i {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .socials {
@@ -270,9 +271,10 @@ section {
 /* Home Section End's */
 
 /* About section Start's */
-/* .about-me {
+.about-me {
   margin-top: 20px;
-} */
+  display: block;
+}
 
 .profile {
   display: flex;
@@ -291,8 +293,8 @@ section {
 
 .profile .my_img img {
   margin: 4rem;
-  width: 15rem;
-  height: auto;
+  width: 21rem;
+  height: 17rem;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
@@ -419,53 +421,92 @@ section {
 
 /* Project Start */
 
+/* Project Container */
 .container_project {
-  width: 80vw;
+  width: 100%;
+  max-width: 1200px;
   display: grid;
-  margin: auto;
-  margin-top: 4rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
 }
 
+/* Card */
 .card {
-  height: 70vh;
-  border-radius: 20px;
-  background-color: var(--skill-bg);
-  color: white;
-  gap: 2rem;
-  width: 24vw;
-  margin: auto;
-  box-shadow: 5px 5px 10px black;
+  background: var(--skill-bg);
+  color: #fff;
+  border-radius: 18px;
+  padding: 0.5rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.card img {
-  width: 300px;
-  margin: 0 auto;
-  padding-top: 15px;
-}
-.card h1,
-.card p,
-.card button {
   text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  max-width: 990px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Title */
+.card h1 {
+  font-size: 1.3rem;
+  margin: 0.8rem 0 0.5rem;
+}
+
+/* Description */
 .card p {
-  padding: 5px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
 }
+
+/* Button */
 .card button {
-  padding: 8px;
+  margin-top: auto;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  border: none;
   cursor: pointer;
-  border-radius: 4px;
-  align-items: center;
+
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 0.9rem;
+
+  transition: background 0.3s ease, transform 0.3s ease;
 }
+
+.card button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Icon */
 .card button i {
-  padding: 2px;
+  font-size: 0.9rem;
 }
+
 /* Project End */
 
 /* Contect Section Start's*/
@@ -581,6 +622,14 @@ section {
   margin: 0 0.3rem;
   animation: animate 0.3s infinite alternate;
 }
+#map {
+  width: 80%;
+  height: 310px;
+  border-radius: 15px;
+  margin-top: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
 @keyframes animate {
   100% {
     transform: scale(1.1);
@@ -590,11 +639,6 @@ section {
 
 /* Responsive Media Start */
 
-/*
-
-  
-
-*/
 
 @media screen and (max-width: 1200px) {
   .home .content h2 {
@@ -720,6 +764,7 @@ section {
   }
   .card {
     height: auto;
+    margin-left: 1rem;
   }
   .card button {
     margin-bottom: 2rem;
@@ -730,6 +775,12 @@ section {
   .card p {
     padding: 20px;
   }
+  #map {
+  width: 100%;
+  height: 310px;
+  margin-top: -3rem;
+  padding: 10rem;
+}
   .footer {
     flex-wrap: wrap;
   }
@@ -742,8 +793,7 @@ section {
     left: 12rem;
   }
   .image img {
-    left: 9rem;
-    width: 50%;
+    left: 0rem;
   }
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -761,7 +811,7 @@ section {
     width: 80%;
   }
   .profile .my_img img {
-    width: 11rem;
+    width: 21rem;
     margin: 1rem;
   }
   .profile .content {
@@ -785,6 +835,7 @@ section {
   }
   .socials {
     margin-top: 2rem;
+    margin-left: 2px;
   }
   .social-icons a {
     font-size: 1.5rem;
