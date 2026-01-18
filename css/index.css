@@ -436,7 +436,7 @@ section {
 .card {
   background: var(--skill-bg);
   color: #fff;
-  border-radius: 18px;
+  border-radius: 5px;
   padding: 0.5rem;
 
   display: flex;
@@ -458,7 +458,7 @@ section {
 .card img {
   width: 100%;
   max-width: 990px;
-  border-radius: 12px;
+  border-radius: 1px;
   margin-bottom: 1rem;
   object-fit: cover;
 }
@@ -548,28 +548,61 @@ section {
   flex-direction: column;
 }
 
+/* Inputs & textarea */
 .form input,
 .form textarea {
   width: 80%;
   margin-bottom: 15px;
   padding: 8px;
+
   background-color: var(--skill-bg);
-  border: none;
+  border: 2px solid transparent;
   border-radius: 4px;
   outline: none;
-  color: gray;
+
+  color: #ffffff;           /* white text */
   font-size: 1rem;
+
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover & focus */
+.form input:hover,
+.form textarea:hover,
+.form input:focus,
+.form textarea:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 6px rgba(0, 198, 255, 0.4);
+}
+
+/* Placeholder */
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button */
 .form button {
   width: 200px;
   padding: 8px;
   cursor: pointer;
+
   border-radius: 5px;
   background: none;
-  color: white;
-  border: 2px solid rgb(158, 158, 158);
+  color: #ffffff;          /* white text */
+  border: 2px solid #9e9e9e;
+
+  transition: background 0.3s ease, border 0.3s ease, transform 0.2s ease;
 }
+
+/* Button hover */
+.form button:hover {
+  background: #00c6ff;
+  border-color: #00c6ff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 /* Contect Section End's*/
 
 /* Footer Section Start's */
@@ -625,7 +658,7 @@ section {
 #map {
   width: 80%;
   height: 310px;
-  border-radius: 15px;
+  border-radius: 3px;
   margin-top: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
@@ -764,7 +797,8 @@ section {
   }
   .card {
     height: auto;
-    margin-left: 1rem;
+    width: 100%;
+    margin-left: 0rem;
   }
   .card button {
     margin-bottom: 2rem;
@@ -773,14 +807,28 @@ section {
     font-size: 1rem;
   }
   .card p {
-    padding: 20px;
+    padding: 10px;
   }
   #map {
   width: 100%;
   height: 310px;
   margin-top: -3rem;
-  padding: 10rem;
+  padding: 13.5rem;
+  border-radius: 3px;
 }
+.card img {
+  width: 100%;
+  max-width: 990px;
+  border-radius: 1px;
+}
+.form input,
+  
+  .form textarea {
+    width: 100%;
+  }
+
+ 
+
   .footer {
     flex-wrap: wrap;
   }
