@@ -655,13 +655,6 @@ section {
   margin: 0 0.3rem;
   animation: animate 0.3s infinite alternate;
 }
-#map {
-  width: 80%;
-  height: 310px;
-  border-radius: 3px;
-  margin-top: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
 
 @keyframes animate {
   100% {
@@ -809,11 +802,14 @@ section {
   .card p {
     padding: 10px;
   }
-  #map {
-  width: 100%;
+  .contact-right {
+    margin-top: 2rem;
+  }
+  iframe {
+  width: 100rem;
   height: 310px;
   margin-top: -3rem;
-  padding: 12rem;
+  /* padding: 12rem; */
   border-radius: 3px;
 }
 .card img {
